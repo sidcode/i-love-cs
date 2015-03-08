@@ -1,0 +1,34 @@
+start                    #start the program
+tree type binary myBinTree        #@declared a variable myBinTree that can store a tree of 
+type binary @#
+myTree is {x}-{y-{q,w},z-{e,r}}    #@declaring the tree {root}-{child1,child2} where each    
+child can again be defined as {root}-{child1,child2,...,childn} @#
+data x,q,w,e,r    ,y , z            # declared variables that can store data
+x is 4                    #assigned value to x
+{y,z} is {3,2}                #multiple assignments at once
+{q,w,e,r} is {1,5,6,7}            
+x is root of myBinTree        #assigning data element to root of tree
+{y,z} is root of {abc,bcd}        #multiple assignments
+x is {abc,bcd}                #node is {childleft,childright}
+y is {q,w}
+z is {e,r}        
+
+start traverse    myBinTree        #starting function called traverse
+goto root                #visiting root of tree
+goto y                    #visiting a node 
+goto z
+goto q
+goto w
+goto e
+goto r
+show {check traverse dfs}        #@checking if given traversal was dfs or not, prints 
+accordingly@#
+done traverse                #end of traverse function
+
+start traverse    myBinTree        #starting function called traverse
+goto {x,y,z,q,w,e,r}            #order in which nodes are visited
+show check traverse dfs        
+done traverse                
+show traverse myBinTree dfs    #prints the dfs traversal for myBinTree
+done                    #end of program
+

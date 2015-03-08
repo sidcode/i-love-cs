@@ -1,0 +1,31 @@
+start                    #start the program
+tree myTree                #declared a variable myTree that can store a tree
+data x                    #declared a variable ‘x’ that can store data
+x is 4                    #assigned value to x
+data y ,z , q,w,e,r                                    
+{y,z} is {3,2}                #multiple assignments at once            
+{q,w,e,r} is {1,5,6,7}             
+myTree is {x}-{y-{q,w,e},z-{r}}     #@declaring the tree {root}-{child1,child2} where each    
+child can again be defined as {root}-{child1,child2,...,childn} @#
+#@ alternate declaration of a tree
+myTree has x
+x has y,z
+y has q,w,e
+z has r  @#
+
+show sibling z                #prints all siblings of a particular node
+show parent z                #prints the immediate predecessor of a node
+show child x                #prints all immediate successors of a node
+show descendent y            #prints all successors of a node
+show degree of y            #prints the number of children of a node
+show path {x,q}            #@prints path between node1 and node2 if existent or 
+displays an error message if not @#
+
+show path {q,w}            
+show level x                #prints the level on which the node is present
+delete z                #deletes the subtree with root z
+search 3                #prints name of node with value of data 3
+show height x                #prints height of node x
+type b is check type myTree        #stores the data type of myTree in ‘b’
+show type                 #prints type stored in ‘b’
+done                    #end of program

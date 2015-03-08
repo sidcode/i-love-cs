@@ -1,0 +1,6 @@
+start 				#start the program
+data a 				# declared a variable 'a' that can store data
+show 'Hello World' 		# print Hello world. for printing strings
+take a 				# value taken as input from user stored in variable 'a'
+show a 			# prints the value of 'a'
+done 				# end of program

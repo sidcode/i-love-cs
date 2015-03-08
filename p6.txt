@@ -1,0 +1,19 @@
+start                            #start the program
+list type adjacency aList                #@declared a variable aList that can 
+store a list of type adjacency @#
+data a,b,c,d,e                        #declared variables that can store data
+{a,b,c,d,e} is {1,2,3,4,5}                #Assigning values
+aList is {a-{b,c,d,e},b-{a,d},c-{a,d},d-{a,b,c,d}}    #@list is 
+{vertex1-{adjacency1,...,adjacencyn}, ...., vertexn-{adjacency1,...,adjacencyn}} @#
+convert aList to matrix type adjacency aMatrix     #automatic type conversion
+convert aList to graph myGraph            
+graph myGraph2                    
+start loop myLoop                    #starting a loop
+y is element aList                    #assigning first element of aList to y
+start loop myLoop2                    #starting second loop
+if y has neighbour x and x not in myGraph2        
+add x to myGraph2                    
+connect x and y                    
+loop back myLoop2 {all neighbour of y done}        # loop back statement with exit condition
+loop back myLoop {all elements of aList done}    
+done                            # end of program 

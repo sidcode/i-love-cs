@@ -1,0 +1,24 @@
+start                    #start the program
+tree type binary myBinTree        #@declared a variable myBinTree that can store a tree of
+type binary @#
+tree type binary abc,bcd        
+data x,q,w,e,r                #declared variables that can store data
+data y , z, h                
+x is 4                    #Assigning value to x
+{y,z} is {3,2}                #Assigning values
+{q,w,e,r} is {1,5,6,7}            
+x is root of myBinTree        #assigning data element to root of tree
+{y,z} is root of {abc,bcd}        #multiple assignment
+x is {abc,bcd}                #node is {child_left,child_right}
+q insert left child of y            #inserting a child node to left
+w insert right child of y        #inserting a child node to right
+{e,r} insert child of z            #{child_left,child_right}
+show degree of y            #@prints the number of children of a node, should be 2 in 
+a binary tree@#
+show path {x,q}            #@prints path between node1 and node2 if existent or 
+displays an error message if not @#
+show path {q,w}            
+show level x                #prints the level on which the node is present
+delete z                #deletes the subtree with root z
+show height myBinTree        #prints height of the binary tree
+done                     #end of program

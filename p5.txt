@@ -1,0 +1,16 @@
+start                        #  start the program
+heap myHeap
+list myList                     #  declare a list type element
+data a,b,c,d,e,f,g,h                 #  declare data elements
+{a,b,c,d,e,f,g,h} is {1,2,3,4,5,6,7,8}        #  give values to data elements
+myList add {a,b,c,d,e,f,g,h}            #  adding elements to list
+myHeap is heapify myList            # making a heap from list
+tree type avl abcd                 #  declaring an AVL tree
+start convert                     #  starting a manual convert function
+start loop loop1                 #  starting a loop
+data a is delete min myList            #  removing min element from list
+abcd insert a                    #  adding element to tree
+loop back loop1 till {myList is empty}    # loop back statement with exit condition
+done convert                    #  end of convert function
+convert myList to tree type bTree bcde    #  automatic convert
+done                        #  end of program
